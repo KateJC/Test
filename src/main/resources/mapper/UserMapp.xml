@@ -1,0 +1,12 @@
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.kejunchi.test.dao.UserMapper">
+
+
+    <select id="getUserList" resultType="User">
+        select u.id id,u.first_name firstName,u.last_name lastName ,u.sex sex from user u
+    </select>
+
+
+</mapper>
